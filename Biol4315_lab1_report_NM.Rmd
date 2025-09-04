@@ -7,7 +7,7 @@ date: "2025-09-04"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+## Owen Coelho
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
@@ -26,4 +26,25 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
+
+```{r c1, eval=FALSE}
+install.packages("vegan")
+```
+
+This is the code that your going to load the ggplot2 package and plot a scatter plot of speed vs dist from the cars dataset
+
+```{r c2,}
+library(vegan)
+library(ggplot2)
+ggplot(cars, aes(x = speed, y = dist)) +
+  geom_point() +
+  labs(title = "Scatter plot of speed vs dist",
+       x = "Speed",
+       y = "Distance")
+```
+
+⁠
+
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
