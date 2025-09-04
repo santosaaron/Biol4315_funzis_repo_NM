@@ -43,7 +43,14 @@ ggplot(cars, aes(x = speed, y = dist)) +
        y = "Distance")
 ```
 
-⁠
+```{bash, eval=FALSE}
+docker pull nextgenusfs/funannotate
+
+conda create -n sequali-env python=3.1.0 -c conda-forge
+conda activate sequali-env
+conda install -c conda-forge -c bioconda sequali
+```
+
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
