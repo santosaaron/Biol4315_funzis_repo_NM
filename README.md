@@ -2,4 +2,4 @@
 
 Readme for BioL4315
 
-added from R studio
+added from R studio x2
